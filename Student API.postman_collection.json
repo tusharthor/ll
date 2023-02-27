@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "782fcf27-920d-411a-ba32-97a277a085b8",
+		"name": "Student API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get projects",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/projects",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"projects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insert projects",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"projectId\":1,\r\n    \"durationInDays\":10,\r\n    \"endDate\": \"1997-12-18\",\r\n    \"projectName\":\"crud operation\",\r\n    \"startDate\": \"1997-12-15\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/project/insert",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"project",
+						"insert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insert students",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"studentId\":2,\r\n    \"firstName\":\"jam\",\r\n    \"lastName\":\"ke\",\r\n    \"mobileNumber\":1234567893,\r\n    \"emailId\":\"@yahoo.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/student/insert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"insert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get project by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/project/3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"project",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get student by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/student/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"student",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get students - project list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/studentProjects/101",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"studentProjects",
+						"101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "insert studentProjects",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "check duration in days Project",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"projectId\":104,\r\n    \"durationInDays\":9,\r\n    \"endDate\": \"1997-12-18\",\r\n    \"projectName\":\"crud operation\",\r\n    \"startDate\": \"1997-12-15\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/project/update/104",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"project",
+						"update",
+						"104"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
